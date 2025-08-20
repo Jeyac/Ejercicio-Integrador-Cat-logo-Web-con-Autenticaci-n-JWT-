@@ -1,0 +1,54 @@
+{
+  "name": "catalogo-productos-frontend",
+  "version": "1.0.0",
+  "description": "Frontend de la aplicación de Catálogo de Productos - Vue.js + Bootstrap",
+  "author": "Jeraldyn",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.11.0",
+    "core-js": "^3.33.0",
+    "pinia": "^2.1.0",
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.28.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-vue": "^9.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usuario/catalogo-productos.git"
+  },
+  "keywords": [
+    "vue",
+    "bootstrap",
+    "catalogo",
+    "productos",
+    "crud",
+    "jwt",
+    "autenticacion"
+  ],
+  "license": "MIT"
+}
