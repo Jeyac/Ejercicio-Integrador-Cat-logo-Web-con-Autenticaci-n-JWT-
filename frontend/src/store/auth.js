@@ -102,6 +102,43 @@ export const useAuthStore = defineStore('auth', {
     },
 
     /**
+     * Registra un nuevo usuario
+     * @param {Object} userData - Datos del usuario (email, password, nombre)
+     * @returns {Object} Resultado de la operación {success, message}
+     */
+    async register(userData) {
+      try {
+        this.loading = true
+        
+        // Realizar petición de registro al backend
+        const response = await authApi.register(userData)
+        
+        if (response.success) {
+          // Guardar información del usuario y tokens
+          this.user = response.data.user
+          this.accessToken = response.data.access_token
+          this.refreshToken = response.data.refresh_token
+          
+          // Persistir tokens en localStorage
+          localStorage.setItem('access_token', this.accessToken)
+          localStorage.setItem('refresh_token', this.refreshToken)
+          
+          return { success: true }
+        } else {
+          return { success: false, message: response.message }
+        }
+      } catch (error) {
+        console.error('Error en registro:', error)
+        return { 
+          success: false, 
+          message: error.response?.data?.message || 'Error de conexión' 
+        }
+      } finally {
+        this.loading = false
+      }
+    },
+
+    /**
      * Refresca el token de acceso usando el refresh token
      * @returns {boolean} true si el refresh fue exitoso
      */
