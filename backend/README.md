@@ -1,8 +1,8 @@
-# 🐍 Backend Flask - Catálogo de Productos
+# Backend Flask - Catálogo de Productos
 
 Backend de la aplicación de catálogo de productos construido con **Flask**, siguiendo los principios de **Clean Architecture** y utilizando **PostgreSQL** como base de datos.
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 El backend está estructurado siguiendo los principios de **Clean Architecture**:
 
@@ -28,32 +28,32 @@ backend/
 
 ## 🚀 Características
 
-### 🔐 Autenticación JWT
+### Autenticación JWT
 - **Registro** y **login** de usuarios
 - **Tokens de acceso** (1 hora) y **refresh** (30 días)
 - **Rutas protegidas** con middleware JWT
 - **Manejo automático** de tokens expirados
 
-### 📦 Gestión de Entidades
+### Gestión de Entidades
 - **Categorías**: Clasificación de productos
 - **Presentaciones**: Formatos de presentación
 - **Productos**: Gestión completa con precios y estado
 - **Usuarios**: Sistema de autenticación
 
-### 🔍 Funcionalidades Avanzadas
+### Funcionalidades Avanzadas
 - **Búsqueda** case-insensitive por nombre
 - **Paginación** configurable
 - **Filtros** por categoría y presentación
 - **Validación** de datos con Marshmallow
 - **Relaciones** entre entidades
 
-## 📋 Requisitos Previos
+## Requisitos Previos
 
 - **Python 3.13+**
 - **PostgreSQL 12+**
 - **pip** (gestor de paquetes Python)
 
-## 🛠️ Instalación
+## Instalación
 
 ### 1. Clonar el Repositorio
 ```bash
@@ -174,9 +174,9 @@ CORS_ORIGINS = [
 ]
 ```
 
-## 📡 API Endpoints
+## API Endpoints
 
-### 🔐 Autenticación
+### Autenticación
 ```
 POST /api/auth/register     # Registro de usuario
 POST /api/auth/login        # Login de usuario
@@ -184,13 +184,13 @@ POST /api/auth/refresh      # Refresh de token
 GET  /api/auth/me          # Información del usuario
 ```
 
-### 🏥 Health Check
+### Health Check
 ```
 GET  /api/health           # Estado de la API
 GET  /                     # Información del servidor
 ```
 
-### 📂 Categorías
+### Categorías
 ```
 GET    /api/categorias      # Listar categorías (paginado, búsqueda)
 POST   /api/categorias      # Crear categoría
@@ -198,7 +198,7 @@ PUT    /api/categorias/:id  # Actualizar categoría
 DELETE /api/categorias/:id  # Eliminar categoría
 ```
 
-### 📦 Presentaciones
+### Presentaciones
 ```
 GET    /api/presentaciones      # Listar presentaciones
 POST   /api/presentaciones      # Crear presentación
@@ -206,7 +206,7 @@ PUT    /api/presentaciones/:id  # Actualizar presentación
 DELETE /api/presentaciones/:id  # Eliminar presentación
 ```
 
-### 🛍️ Productos
+### Productos
 ```
 GET    /api/productos       # Listar productos (con filtros)
 POST   /api/productos       # Crear producto
@@ -219,7 +219,7 @@ DELETE /api/productos/:id   # Eliminar producto
 - **Búsqueda**: `?q=texto`
 - **Filtros**: `?categoria_id=1&presentacion_id=1`
 
-## 🗄️ Modelo de Datos
+## Modelo de Datos
 
 ### Categorías
 ```sql
@@ -269,7 +269,7 @@ CREATE TABLE usuarios (
 );
 ```
 
-## 🚀 Scripts de Desarrollo
+## Scripts de Desarrollo
 
 ### Ejecutar en Modo Desarrollo
 ```bash
@@ -296,7 +296,7 @@ flask db upgrade
 flask db downgrade
 ```
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### Error de Conexión a Base de Datos
 1. Verificar que PostgreSQL esté ejecutándose
@@ -328,7 +328,7 @@ flask db downgrade
 2. Comprobar que la base de datos esté creada
 3. Revisar permisos del usuario de base de datos
 
-## 📝 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Flask 3.0** - Framework web
 - **SQLAlchemy 2.0** - ORM
@@ -339,7 +339,7 @@ flask db downgrade
 - **Flask-CORS** - Manejo de CORS
 - **psycopg[binary]** - Driver PostgreSQL
 
-## 🤝 Contribución
+## Contribución
 
 1. Fork el proyecto
 2. Crear una rama para tu feature (`git checkout -b feature/AmazingFeature`)
@@ -347,7 +347,7 @@ flask db downgrade
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abrir un Pull Request
 
-## 🔒 Seguridad
+## Seguridad
 
 ### Variables de Entorno
 - **Nunca compartas** tus archivos `.env` con credenciales reales
@@ -369,28 +369,19 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
 
 ### Ejemplo de Configuración Segura
 ```env
-# ✅ CORRECTO - Usar valores genéricos para credenciales de BD
+# CORRECTO - Usar valores genéricos para credenciales de BD
 DB_USER=tu_usuario_postgres
 DB_PASSWORD=tu_password_postgres
 
-# ✅ CORRECTO - Usar ejemplos de claves generadas
+# CORRECTO - Usar ejemplos de claves generadas
 SECRET_KEY=mi_clave_secreta_super_segura_2024_xyz123
 JWT_SECRET_KEY=mi_jwt_secret_key_super_segura_2024_abc456
 
-# ❌ INCORRECTO - No usar credenciales reales de BD en documentación
-DB_USER=jera
-DB_PASSWORD=372004
-```
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
-
-## 👨‍💻 Autor
+## Autor
 
 **Jeraldyn** - [GitHub](https://github.com/Jeyac)
 
-## 📚 Repositorio
+## Repositorio
 
 **URL del Repositorio**: https://github.com/Jeyac/Ejercicio-Integrador-Cat-logo-Web-con-Autenticaci-n-JWT-.git
 
