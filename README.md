@@ -8,7 +8,7 @@ Una aplicación web completa para la gestión de un catálogo de productos, cons
 
 ## Características Principales
 
-### 🌐 Acceso Multiplataforma
+### Acceso Multiplataforma
 - **Desarrollo local**: Acceso desde `localhost`
 - **Red local**: Acceso desde cualquier dispositivo en la misma red WiFi
 - **Configuración automática** de CORS para acceso desde red local
@@ -42,7 +42,7 @@ Una aplicación web completa para la gestión de un catálogo de productos, cons
 - **Migrations** con Alembic
 - **Validación** con Marshmallow
 
-## 📋 Requisitos Previos
+## Requisitos Previos
 
 ### Backend (Python 3.13+)
 - Python 3.13 o superior
