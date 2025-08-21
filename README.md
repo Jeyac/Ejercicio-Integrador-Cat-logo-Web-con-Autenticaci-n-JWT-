@@ -1,12 +1,12 @@
-# 🛍️ Catálogo de Productos - Aplicación Full-Stack
+# Catálogo de Productos - Aplicación Full-Stack
 
 Una aplicación web completa para la gestión de un catálogo de productos, construida con **Flask** (backend) y **Vue.js** (frontend), siguiendo los principios de **Clean Architecture**.
 
-> **📚 Documentación Específica:**
+> **Documentación Específica:**
 > - [Backend Flask](./backend/README.md) - Documentación técnica del backend
 > - [Frontend Vue.js](./frontend/README.md) - Documentación técnica del frontend
 
-## 🚀 Características Principales
+## Características Principales
 
 ### 🌐 Acceso Multiplataforma
 - **Desarrollo local**: Acceso desde `localhost`
@@ -14,20 +14,20 @@ Una aplicación web completa para la gestión de un catálogo de productos, cons
 - **Configuración automática** de CORS para acceso desde red local
 - **Health check endpoints** para verificar el estado del servidor
 
-### 🔐 Autenticación JWT
+### Autenticación JWT
 - **Login/Registro** de usuarios
 - **Tokens de acceso y refresh**
 - **Rutas protegidas** en backend y frontend
 - **Manejo automático** de sesiones expiradas
 - **Formulario de login moderno** con validación y efectos visuales
 
-### 📦 Gestión de Entidades
+### Gestión de Entidades
 - **Categorías**: Clasificación de productos
 - **Presentaciones**: Formatos de presentación
 - **Productos**: Gestión completa con precios y estado
 - **Tarjetas interactivas** que funcionan como botones cuando el usuario está autenticado
 
-### 🎨 Interfaz Moderna
+### Interfaz Moderna
 - **Bootstrap 5** para diseño responsive
 - **Vue.js 3** con Composition API
 - **Pinia** para manejo de estado
@@ -36,7 +36,7 @@ Una aplicación web completa para la gestión de un catálogo de productos, cons
 - **Formulario de login moderno** con efectos visuales
 - **Navegación intuitiva** con botones posicionados estratégicamente
 
-### 🏗️ Arquitectura Sólida
+### Arquitectura Sólida
 - **Clean Architecture** en el backend
 - **SQLAlchemy** con PostgreSQL
 - **Migrations** con Alembic
@@ -53,7 +53,7 @@ Una aplicación web completa para la gestión de un catálogo de productos, cons
 - Node.js 16+ 
 - npm 8+ o yarn
 
-## 🛠️ Instalación y Configuración
+## Instalación y Configuración
 
 ### 1. Clonar el Repositorio
 ```bash
@@ -127,7 +127,7 @@ npm install
 npm run serve
 ```
 
-## 🌐 Acceso a la Aplicación
+## Acceso a la Aplicación
 
 ### Desarrollo Local
 - **Frontend**: http://localhost:8080
@@ -144,7 +144,7 @@ npm run serve
 - **Frontend**: http://192.168.1.100:8080
 - **Backend API**: http://192.168.1.100:5000/api
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 catalogo-productos/
@@ -170,7 +170,7 @@ catalogo-productos/
 └── README.md                 # Este archivo
 ```
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### Autenticación
 - `POST /api/auth/register` - Registro de usuario
@@ -179,24 +179,24 @@ catalogo-productos/
 - `GET /api/auth/me` - Información del usuario
 
 ### Categorías
-- `GET /api/categorias` - Listar categorías (con paginación y búsqueda)
+- `GET /api/categorias` - Listar categorías (con paginación y búsqueda por nombre)
 - `POST /api/categorias` - Crear categoría
 - `PUT /api/categorias/:id` - Actualizar categoría
 - `DELETE /api/categorias/:id` - Eliminar categoría
 
 ### Presentaciones
-- `GET /api/presentaciones` - Listar presentaciones
+- `GET /api/presentaciones` - Listar presentaciones (con paginación y búsqueda por nombre)
 - `POST /api/presentaciones` - Crear presentación
 - `PUT /api/presentaciones/:id` - Actualizar presentación
 - `DELETE /api/presentaciones/:id` - Eliminar presentación
 
 ### Productos
-- `GET /api/productos` - Listar productos (con filtros)
+- `GET /api/productos` - Listar productos (con filtros, paginación y búsqueda por nomnbre)
 - `POST /api/productos` - Crear producto
 - `PUT /api/productos/:id` - Actualizar producto
 - `DELETE /api/productos/:id` - Eliminar producto
 
-## 🚀 Scripts de Desarrollo
+## Scripts de Desarrollo
 
 ### Backend
 ```bash
@@ -236,7 +236,7 @@ start_backend.bat
 start_frontend.bat
 ```
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### Error de Conexión a Base de Datos
 1. Verificar que PostgreSQL esté ejecutándose
@@ -281,7 +281,7 @@ cd ..
 python backend/wsgi.py
 ```
 
-## 📝 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 ### Backend
 - **Flask 3.0** - Framework web
@@ -305,15 +305,7 @@ python backend/wsgi.py
 - **ESLint** - Linting de código
 - **Git** - Control de versiones
 
-## 🤝 Contribución
-
-1. Fork el proyecto
-2. Crear una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abrir un Pull Request
-
-## 🔒 Seguridad
+## Seguridad
 
 ### Variables de Entorno
 - **Nunca compartas** tus archivos `.env` con credenciales reales
@@ -344,28 +336,23 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
 
 ### Ejemplo de Configuración Segura
 ```env
-# ✅ CORRECTO - Usar valores genéricos para credenciales de BD
+# CORRECTO - Usar valores genéricos para credenciales de BD
 DB_USER=tu_usuario_postgres
 DB_PASSWORD=tu_password_postgres
 
-# ✅ CORRECTO - Usar ejemplos de claves generadas
+# CORRECTO - Usar ejemplos de claves generadas
 SECRET_KEY=mi_clave_secreta_super_segura_2024_xyz123
 JWT_SECRET_KEY=mi_jwt_secret_key_super_segura_2024_abc456
 
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
-
-## 👨‍💻 Autor
+## Autor
 
 **Jeraldyn** - [GitHub](https://github.com/Jeyac)
 
-## 📚 Repositorio
+## Repositorio
 
 **URL del Repositorio**: https://github.com/Jeyac/Ejercicio-Integrador-Cat-logo-Web-con-Autenticaci-n-JWT-.git
 
-## 📚 Documentación Adicional
+## Documentación Adicional
 
 Para información más detallada sobre cada parte del proyecto:
 
