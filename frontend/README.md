@@ -1,8 +1,8 @@
-# 🎨 Frontend Vue.js - Catálogo de Productos
+# Frontend Vue.js - Catálogo de Productos
 
 Frontend de la aplicación de catálogo de productos construido con **Vue.js 3**, **Bootstrap 5** y **Pinia** para el manejo de estado.
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 El frontend está estructurado siguiendo las mejores prácticas de Vue.js:
 
@@ -36,42 +36,42 @@ frontend/
 └── vue.config.js         # Configuración de Vue CLI
 ```
 
-## 🚀 Características
+## Características
 
-### 🎨 Interfaz Moderna
+### Interfaz Moderna
 - **Bootstrap 5** para diseño responsive
 - **Vue.js 3** con Composition API
 - **Bootstrap Icons** para iconografía
 - **Animaciones** y transiciones suaves
 - **Diseño** moderno y profesional
 
-### 🔐 Autenticación
+### Autenticación
 - **Login/Registro** de usuarios
 - **Manejo automático** de tokens JWT
 - **Guards de ruta** para protección
 - **Cerrar sesión** con limpieza de estado
 
-### 📊 Gestión de Datos
+### Gestión de Datos
 - **CRUD completo** para todas las entidades
 - **Tablas** con paginación y búsqueda
 - **Formularios** con validación
 - **Modales** para crear/editar
 - **Confirmación** para eliminar
 
-### 🔍 Funcionalidades Avanzadas
+### Funcionalidades Avanzadas
 - **Búsqueda** en tiempo real
 - **Filtros** por categoría y presentación
 - **Paginación** configurable
 - **Estados de carga** con spinners
 - **Notificaciones** de éxito/error
 
-## 📋 Requisitos Previos
+## Requisitos Previos
 
 - **Node.js 16+**
 - **npm 8+** o **yarn**
 - **Backend Flask** ejecutándose en `http://localhost:5000`
 
-## 🛠️ Instalación
+## Instalación
 
 ### 1. Clonar el Repositorio
 ```bash
@@ -114,7 +114,7 @@ yarn serve
 
 La aplicación estará disponible en: **http://localhost:8080**
 
-## 🔧 Configuración
+## Configuración
 
 ### Variables de Entorno
 
@@ -130,7 +130,7 @@ El archivo `vue.config.js` contiene la configuración específica:
 - **Configuración** de build
 - **Opciones** de desarrollo
 
-## 🎯 Componentes Principales
+## Componentes Principales
 
 ### Navbar.vue
 Barra de navegación principal con:
@@ -154,7 +154,7 @@ Componente genérico para formularios:
 - **Estados de carga**
 - **Botones** de acción
 
-## 🔐 Autenticación
+## Autenticación
 
 ### Flujo de Autenticación
 1. **Login**: Usuario ingresa credenciales
@@ -179,7 +179,7 @@ Componente genérico para formularios:
 - ensureAuthenticated()
 ```
 
-## 🛣️ Rutas y Navegación
+## Rutas y Navegación
 
 ### Rutas Públicas
 - `/` - Página de inicio
@@ -195,7 +195,7 @@ Componente genérico para formularios:
 - **Redirección** al login si no está autenticado
 - **Prevención** de acceso a login si ya está autenticado
 
-## 📡 Comunicación con Backend
+## Comunicación con Backend
 
 ### Cliente HTTP (Axios)
 ```javascript
@@ -219,7 +219,7 @@ VUE_APP_API_URL=http://TU_IP_LOCAL:5000/api        // Red local
 - **Presentaciones**: `/presentaciones`
 - **Productos**: `/productos`
 
-## 🎨 Estilos y Diseño
+## Estilos y Diseño
 
 ### Bootstrap 5
 - **Sistema de grid** responsive
@@ -237,7 +237,7 @@ VUE_APP_API_URL=http://TU_IP_LOCAL:5000/api        // Red local
 - **Animaciones** y transiciones
 - **Estilos** específicos de componentes
 
-## 🚀 Scripts de Desarrollo
+## Scripts de Desarrollo
 
 ### Servidor de Desarrollo
 ```bash
@@ -259,7 +259,7 @@ npm run lint
 npm run lint -- --fix
 ```
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### Error de Conexión al Backend
 1. Verificar que el backend esté ejecutándose
@@ -294,7 +294,7 @@ npm run lint -- --fix
 3. Revisar los headers de las peticiones
 4. Comprobar la configuración de proxy
 
-## 📝 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Vue.js 3** - Framework frontend
 - **Vue Router 4** - Navegación
@@ -304,23 +304,11 @@ npm run lint -- --fix
 - **Axios** - Cliente HTTP
 - **Vue CLI** - Herramientas de desarrollo
 
-## 🤝 Contribución
-
-1. Fork el proyecto
-2. Crear una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abrir un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
-
-## 👨‍💻 Autor
+## Autor
 
 **Jeraldyn** - [GitHub](https://github.com/Jeyac)
 
-## 📚 Repositorio
+## Repositorio
 
 **URL del Repositorio**: https://github.com/Jeyac/Ejercicio-Integrador-Cat-logo-Web-con-Autenticaci-n-JWT-.git
 
